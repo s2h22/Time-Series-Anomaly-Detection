@@ -9,9 +9,9 @@ The model learns the normal pattern of sensor readings and identifies deviations
 - Dataset: Multivariate time series from 52 pump sensors
 - Normal/Abnormal: Abnormal states include BROKEN and RECOVERING
 - Model: LSTM encoder-decoder with MSE loss
-- Detection: Threshold-based anomaly score using Mahalanobis distance
+- Detection: Threshold-based anomaly scoring using Mahalanobis distance
 - Evaluation: Precision, Recall, F1-score
-- Visualization: Score plots and anomaly markers
+- Visualization: Anomaly score plots with true anomaly markers
 
 ## 📁 Dataset
 
@@ -19,7 +19,7 @@ The model learns the normal pattern of sensor readings and identifies deviations
 - Preprocessing:
   - Normalization
   - Removal of sensors with high missing values
-  - Train/Val/Test split with normal and abnormal labels
+  - Train/Val/Test split for normal data
 
 ## 🧠 Model Architecture
 
